@@ -17,15 +17,15 @@ public class destinationCity {
 		System.out.println(dC.destCity(input));
 	}
 
-	public String destCity(List<List<String>> paths) {
-	    Set<String> outgoingPathCities = new HashSet<>();
-	    Set<String> cities = new HashSet<>();
-//	    [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
-	    
-	    //outgoing paths {{London,Newyork},{Newyork,Lima},{Lima, SaoPaulo}}
+	public String destCity(List<List<String>> paths) //create methods for return the  City 
+	{
+	    Set<String> outgoingPathCities = new HashSet<>();//create object of HashSet<> class to add city
+	    Set<String> cities = new HashSet<>(); //create object of HashSet<> class to add city
+	  //[["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
+	   
 	    //cities {{London,Newyork},{Newyork, Lima},{Lima,Sao Paulo}}
 	    for (List<String> path : paths) {
-	      outgoingPathCities.add(path.get(0));
+	      outgoingPathCities.add(path.get(0));   //outgoing paths {{London,Newyork},{Newyork,Lima},{Lima, SaoPaulo}}
 	      cities.add(path.get(0));
 	      cities.add(path.get(1));
 	    }
