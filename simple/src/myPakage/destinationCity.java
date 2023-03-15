@@ -23,13 +23,13 @@ public class destinationCity {
 	    Set<String> cities = new HashSet<>(); //create object of HashSet<> class to add city
 	  //[["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
 	   
-	    //cities {{London,Newyork},{Newyork, Lima},{Lima,Sao Paulo}}
+	    
 	    for (List<String> path : paths) {
 	      outgoingPathCities.add(path.get(0));   //outgoing paths {{London,Newyork},{Newyork,Lima},{Lima, SaoPaulo}}
 	      cities.add(path.get(0));
 	      cities.add(path.get(1));
 	    }
-	    for (String city : cities) {
+	    for (String city : cities) {	//cities {{London,Newyork},{Newyork, Lima},{Lima,Sao Paulo}}
 	      if (!outgoingPathCities.contains(city)) {
 	        return city;
 	      }
