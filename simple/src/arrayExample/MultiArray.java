@@ -20,7 +20,8 @@ public class MultiArray {
 		}
 
 		int b[][]= {{10,20},{20,30},{20,30}};
-		
+		System.out.println(b.length);
+		System.out.println(b[0].length);
 		for (int i=0;i<3;i++)
 		{
 			for (int j=0;j<2;j++)
