@@ -1,6 +1,7 @@
 package arrayListDemo;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class FirstArraylist {
 
@@ -20,6 +21,16 @@ public class FirstArraylist {
 		al.addAll(al2);
 		
 		System.out.println(al);
+		System.out.println("------------------------------- print using iterator method  ------------- ");
+		// print using iterator method 
+		Iterator it=al.iterator();// it read element one by one
+		 while(it.hasNext())
+		 {
+			 System.out.println(it.next());
+		 }
+		
+		
+		
 	}
 
 }
