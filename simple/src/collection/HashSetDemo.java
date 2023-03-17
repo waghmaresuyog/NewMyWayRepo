@@ -1,32 +1,12 @@
-package linkedListExample;
+package collection;
 
-import java.awt.List;
-import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class ListSetDemo {
+public class HashSetDemo {
 
 	public static void main(String[] args) {
-		
-		
-		ArrayList l = new ArrayList();
-		l.add("suyog");
-		l.add("Deepak");
-		l.add("Anushree");
-		l.add("Anushree"); //duplicate is allow
-		l.add(null);
-		l.add(null);
-		System.out.println(l);
-		
-		Iterator it = l.iterator();
-		while (it.hasNext())
-		{
-			System.out.println(it.next());
-		}
-		
-		System.out.println("------------By using Set Method");
 		
 		
 		Set <String> s = new HashSet();		//HashSet Example you can use this to store the number of value 
@@ -39,7 +19,7 @@ public class ListSetDemo {
 		s.add(null);
 		
 		System.out.println("This is  set method " + s);
-		Iterator st = l.iterator();
+		Iterator st = s.iterator();
 		while(st.hasNext())
 		{
 			System.out.println(st.next());
@@ -64,7 +44,9 @@ public class ListSetDemo {
 		{
 			System.out.println(se);
 		}
+
 		
+
 	}
 
 }

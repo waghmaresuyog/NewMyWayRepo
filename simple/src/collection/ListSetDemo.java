@@ -1,6 +1,5 @@
-package linkedListExample;
+package collection;
 
-import java.awt.List;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.Iterator;
@@ -39,7 +38,7 @@ public class ListSetDemo {
 		s.add(null);
 		
 		System.out.println("This is  set method " + s);
-		Iterator st = l.iterator();
+		Iterator st = s.iterator();
 		while(st.hasNext())
 		{
 			System.out.println(st.next());
@@ -64,7 +63,8 @@ public class ListSetDemo {
 		{
 			System.out.println(se);
 		}
-		
+
+
 	}
 
 }
