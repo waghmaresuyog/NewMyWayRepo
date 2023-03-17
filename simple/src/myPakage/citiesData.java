@@ -2,8 +2,7 @@ package myPakage;
 
 import java.util.List;
 
-public class citiesData 
-{
+public class citiesData {
 	List<String> city1;
 
 	public List<String> getCity1() {
@@ -13,6 +12,5 @@ public class citiesData
 	public void setCity1(List<String> city1) {
 		this.city1 = city1;
 	}
-	
-	
+
 }
