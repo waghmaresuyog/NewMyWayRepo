@@ -3,26 +3,19 @@ package simple;
 public class CharAlpha {
 
 	public static void main(String[] args) {
-		
-		char a ='1';
-		char b ='2';
-		char c ='3';
+
+		char a = '1';
+		char b = '2';
+		char c = '3';
 		char d = 'd';
-		
-		if(d == a)
-		{
+
+		if (d == a) {
 			System.out.println("The given char is not alphabet");
-		}
-		else if(d == b)
-		{
+		} else if (d == b) {
 			System.out.println("The given char is not alphabet");
-		}
-		else if(d== c) 
-		{
+		} else if (d == c) {
 			System.out.println("The given char is not alphabet");
-		}
-		else
-		{
+		} else {
 			System.out.println("The given char is alphabet");
 		}
 	}
