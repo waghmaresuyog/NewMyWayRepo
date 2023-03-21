@@ -9,6 +9,4 @@ public class SwapArray {
         System.out.println(Arrays.toString(a));
 
     }
-
-
 }
