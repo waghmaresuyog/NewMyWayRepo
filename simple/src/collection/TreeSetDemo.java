@@ -1,20 +1,22 @@
 package collection;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.TreeSet;
 
 public class TreeSetDemo {
 
 	public static void main(String[] args) {
 		
-		TreeSet ts = new TreeSet();
-		ts.add("Santosh");
-		ts.add("Suyog");
-		ts.add("Mayur");
-		ts.add("Anushree");
-		ts.add("Rana");
+		TreeSet ts = new TreeSet(Arrays.asList("Santosh","Mayur","Suyog","Anushree","Rana"));
+//		ts.add("Santosh");
+//		ts.add("Suyog");
+//		ts.add("Mayur");
+//		ts.add("Anushree");
+//		ts.add("Rana");
 		//ts.add(100);
 		//ts.add(200);		//same data type is allow 
-		ts.add("Santosh");
+	//	ts.add("Santosh");
 		//ts.add(null);  //null not allow 
 		
 		System.out.println(ts);
