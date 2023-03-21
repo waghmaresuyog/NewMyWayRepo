@@ -10,11 +10,5 @@ public class SwapArray {
 
     }
 
-    static int[] revArray (int[]a)
-    {
-        int [] newArray = new int[a.length];
-        for(int i=0; i<a.length; i++){
-            newArray[]
-        }
-    }
+
 }

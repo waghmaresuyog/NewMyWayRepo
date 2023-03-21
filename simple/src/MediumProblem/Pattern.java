@@ -14,9 +14,9 @@ public class Pattern {
             {
                 System.out.print(k);  //in first loop print 1
             }
-            for (int l=2 ;l<=i;l++) //in f- i=1-1; 3>=1;3--
+            for (int l=2 ;l<=i;l++) //-
             {
-                System.out.print(l); //1 will print
+                System.out.print(l);
             }
             System.out.println();
         }
