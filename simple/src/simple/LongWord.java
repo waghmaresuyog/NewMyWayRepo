@@ -6,6 +6,8 @@ public class LongWord {
 
 	public static void main(String args[]) {
 
+		String arr[]= {"ale","apple","monkey","plea"};
+		String s = "abpcplea";
 	}
 
 	String findLongestWord(String s, List d) {
