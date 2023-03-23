@@ -4,4 +4,5 @@
 .project
 .classpath
 simple.iml
-/out/
+out
+production
