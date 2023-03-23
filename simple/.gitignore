@@ -1,4 +1,6 @@
 /bin/
-/.settings/
-/.idea/
+.settings
+.idea
+.project
+.classpath
 simple.iml
