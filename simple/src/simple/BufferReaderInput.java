@@ -18,6 +18,7 @@ public class BufferReaderInput {
         var in = 10;
         System.out.println(in);
 
+
     }
 
 }

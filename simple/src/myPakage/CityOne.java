@@ -41,7 +41,7 @@ public class CityOne {
 		}
 		for (int j=0; j<out.size();j++)	
 		{
-			//create local variable 
+			//create local variable inElement
 			String inElement =in.get(j);
 			if(!out.contains(inElement))
 			return inElement;

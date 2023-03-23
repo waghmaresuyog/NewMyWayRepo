@@ -6,6 +6,8 @@ public class MultiArray {
 
     public static void main(String[] args) {
 
+        int suy[][] = {{10, 20}, {20, 30}, {20, 30}};
+
         int a[][] = {{1, 2}, {2, 3}, {3, 3}};
         System.out.println("Passing value in array in single line and print it ");
         for (int i = 0; i <= 2; i++) {

@@ -10,11 +10,11 @@ import java.util.Set;
 public class destinationCity {
 
 	public static void main(String[] args) {
-		destinationCity dC = new destinationCity();
+		destinationCity dC = new destinationCity();// creating obj of class
 
 		List<List<String>> input = Arrays.asList(Arrays.asList("London", "New York"), Arrays.asList("New York", "Lima"),
-				Arrays.asList("Lima", "Sao Paulo"));
-		System.out.println(dC.destCity(input));
+				Arrays.asList("Lima", "Sao Paulo"));// adding element in input arraylist
+		System.out.println(dC.destCity(input));// print and pass input value to destCity method
 	}
 
 	public String destCity(List<List<String>> paths) // create methods for return the City
