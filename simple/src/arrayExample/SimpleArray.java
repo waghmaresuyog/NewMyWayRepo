@@ -6,11 +6,9 @@ public class SimpleArray {
 
     public static void main(String[] args) {
 
-        int ar[] = new int[4];
+        int ar[] = new int[2];
         ar[0] = 10;
         ar[1] = 20;
-        ar[2] = 30;
-        ar[3] = 40;
         System.out.println("Printing using toString method " + Arrays.toString(ar));
         System.out.println("--------------------------------");
         System.out.println("Using for loop print the another array ");
@@ -29,5 +27,4 @@ public class SimpleArray {
         }
 
     }
-
 }

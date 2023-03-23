@@ -15,5 +15,9 @@ public class BufferReaderInput {
         String input = bu.readLine();
         System.out.println("Your Name is " + input);
 
+        var in = 10;
+        System.out.println(in);
+
     }
+
 }
