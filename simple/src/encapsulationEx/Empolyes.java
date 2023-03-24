@@ -1,4 +1,4 @@
-package encapusl;
+package encapsulationEx;
 
 public class Empolyes {
 
