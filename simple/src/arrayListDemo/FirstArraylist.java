@@ -7,10 +7,10 @@ import java.util.Iterator;
 public class FirstArraylist {
     public static void main(String[] args) {
         //first arraylist
-        ArrayList ArrayListOne = new ArrayList<>();
-        ArrayListOne.add(10);
-        ArrayListOne.add(20);
-        ArrayListOne.add(30);
+        ArrayList ArrayListOne = new ArrayList<>(Arrays.asList(30,20,40,10));
+       // ArrayListOne.add(10);
+       // ArrayListOne.add(20);
+       // ArrayListOne.add(30);
         // Second arratlist
         ArrayList ArrayListTwo = new ArrayList();
         ArrayListTwo.add("suyog");
