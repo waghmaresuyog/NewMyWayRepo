@@ -5,3 +5,4 @@
 .classpath
 simple.iml
 out/
+*.class
