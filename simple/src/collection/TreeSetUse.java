@@ -1,10 +1,9 @@
 package collection;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.TreeSet;
 
-public class TreeSetDemo {
+public class TreeSetUse {
     public static void main(String[] args) {
         //same duplicate is not allow
         //null not allow
