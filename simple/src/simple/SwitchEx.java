@@ -1,15 +1,18 @@
 package simple;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class SwitchEx {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         int num;
-        Scanner sc = new Scanner(System.in);
+        BufferedReader bufferInput = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter number up to ");
-        num = sc.nextInt();
+        num = Integer.parseInt(bufferInput.readLine());
         switch (num) {
             case 5:
                 System.out.println("you are tax free");
