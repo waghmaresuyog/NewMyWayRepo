@@ -6,40 +6,39 @@ import java.util.List;
 
 public class CityOne {
     public static void main(String[] args) {
-        List Test1 = new LinkedList<>();
-        Test1.add("London");
-		Test1.add("New York");
-        List Test2 = new LinkedList<>();
-		Test2.add("New York");
-		Test2.add("Lima");
-        List Test3 = new LinkedList<>();
-		Test3.add("Lima");
-		Test3.add("Sao Paulo");
+        List test1 = new LinkedList<>();
+        test1.add("London");
+        test1.add("New York");
+        List test2 = new LinkedList<>();
+        test2.add("New York");
+        test2.add("Lima");
+        List test3 = new LinkedList<>();
+        test3.add("Lima");
+        test3.add("Sao Paulo");
         List<List<String>> testlist = new ArrayList<>();
-        testlist.add(Test1);
-        testlist.add(Test2);
-        testlist.add(Test3);
-        //System.out.print(testlist);
+        testlist.add(test1);
+        testlist.add(test2);
+        testlist.add(test3);
         String returnDestination = destinationCity(testlist);
         System.out.println("Destination City is : " + returnDestination);
     }
-    private static String destinationCity(List<List<String>> path) {
 
-        List<String> Out = new ArrayList<>();
-        List<String> In = new ArrayList<>();
+    private static String destinationCity(List<List<String>> path) {
+        List<String> out = new ArrayList<>();
+        List<String> in = new ArrayList<>();
 
         for (int i = 0; i < path.size(); i++) {
             List<String> Element = path.get(i);
             String OutElement = Element.get(0);
             String InElement = Element.get(1);
-			Out.add(OutElement);
-			In.add(InElement);
+            out.add(OutElement);
+            in.add(InElement);
         }
-        for (int j = 0; j < Out.size(); j++) {
+        for (int j = 0; j < out.size(); j++) {
             //create local variable inElement
-            String InElement = In.get(j);
-            if (!Out.contains(InElement))
-                return InElement;
+            String inElement = in.get(j);
+            if (!out.contains(inElement))
+                return inElement;
         }
         return null;
     }

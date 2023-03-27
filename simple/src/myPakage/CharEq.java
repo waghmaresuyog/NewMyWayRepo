@@ -24,7 +24,5 @@ public class CharEq {
         } else {
             System.out.println("All Characters Have Different Number of Occurrences");
         }
-
     }
-
 }
