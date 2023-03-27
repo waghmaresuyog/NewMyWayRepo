@@ -1,60 +1,41 @@
 package collection;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.ListIterator;
+import java.util.*;
 
 public class LinkedListDemo {
-
     public static void main(String[] args) {
+        // Linked list follow the index value ,duplicate are allow
+        //allow null value , multiple datatype  are allow
+        LinkedList linkedListOne = new LinkedList(Arrays.asList("suyog", "Anushree", "Deepak", "rajeshree", 30, "santosh"));
+        System.out.println(linkedListOne);
+        // add element at first
+        linkedListOne.addFirst("suyog waghmare");
+        // add element at last
+        linkedListOne.addLast("Suyog Waghmare");
+        System.out.println(linkedListOne);
+        //remove last element
+        linkedListOne.removeLast();
+        System.out.println(linkedListOne);
+        // get the element last value from list
+        System.out.println(linkedListOne.getLast());//
 
-
-        LinkedList ll = new LinkedList();
-
-        ll.add("Suyog");        // follow the index value
-        ll.add("Anushree");
-        ll.add("Deepak");    //duplicate are allow
-        ll.add("Deepak");
-        ll.add("rajeshree");
-        ll.add(null);        //allow null value
-        ll.add(100);
-        ll.add(20.25);// multipal datat type are allow
-        System.out.println(ll);
-        ll.addFirst("suyog waghmare");
-        ll.addLast("Suyog Waghmare");
-        System.out.println(ll);
-        ll.removeLast();
-        System.out.println(ll);
-        System.out.println(ll.getLast());// get the last value of
-        System.out.println("-------------------------------------------- Iterator example below");
-
-
-        ArrayList l = new ArrayList();
-        l.add(10);
-        l.add(20);
-        l.add(30);
-        l.add("suyog");
-        l.add("prasad");
-        System.out.println(l);
-
-        Iterator itr = l.iterator();  //using Iterator methods we can get the data one by one
+        System.out.println("--------------- Iterator example below---------------");
+        ArrayList arrayListOne = new ArrayList(Arrays.asList(10, 20, 30, 50, "Suyog", "Santosh", "Deepak"));
+        System.out.println(arrayListOne);
+        //using Iterator methods we can get the data one by one
+        Iterator itr = arrayListOne.iterator();
         while (itr.hasNext()) {
             System.out.println(itr.next());
         }
-
         System.out.println("-------------using List Iterator methods we can get the data one by one------");
-        ListIterator li = l.listIterator();
-        while (li.hasNext()) {
-            System.out.println(li.next());
+        ListIterator objListIterator = arrayListOne.listIterator();
+        while (objListIterator.hasNext()) {
+            System.out.println(objListIterator.next());
         }
-        //System.out.println(li.previous());
+        // to print from last element using previous keyword
         System.out.println("-------------------------");
-        while (li.hasPrevious()) {
-            System.out.println(li.previous());
+        while (objListIterator.hasPrevious()) {
+            System.out.println(objListIterator.previous());
         }
-
-
     }
-
 }
