@@ -7,40 +7,33 @@ import java.util.Set;
 public class HashSetDemo {
 
     public static void main(String[] args) {
-		//HashSet Example you can use this to store the number of value
-        Set<String> s = new HashSet();
+        //HashSet Example you can use this to store the number of value
+        Set<String> hashObj = new HashSet();
         //using <String> Method we can convert the data type of HasSet into String
-        s.add("Suyog");
-        s.add("Mallinath");
-        s.add("Anushree");
-        s.add("Deepak");
-		//duplicate are not allow in Set
-        s.add(null);
-        s.add(null);
+        hashObj.add("Suyog");
+        hashObj.add("Mallinath");
+        hashObj.add("Anushree");
+        hashObj.add("Deepak");
+        //duplicate are not allow in Set
+        hashObj.add(null);
+        hashObj.add(null);
 
-        System.out.println("This is  set method " + s);
-        Iterator st = s.iterator();
-        while (st.hasNext()) {
-            System.out.println(st.next());
+        System.out.println("This is  set method " + hashObj);
+        // using Iterator method print the hash set
+        Iterator steIterator = hashObj.iterator();
+        while (steIterator.hasNext()) {
+            System.out.println(steIterator.next());
         }
-
-        System.out.println("hashlist contain anushree or not: --> " + s.contains("Anushree"));
-        if (s.contains("Suyog")) {
+        //using for each loop print the hash set
+        for (String stringOne : hashObj) {
+            System.out.println(stringOne);
+        }
+        // check the element in hash set or not
+        System.out.println("hashlist contain anushree or not: --> " + hashObj.contains("Anushree"));
+        if (hashObj.contains("Suyog")) {
             System.out.println("Suyog is present");
         } else {
             System.out.println("Suyog is absent ");
         }
-
-        int arr[] = {12, 13, 14, 44};
-        //traversing the array with for-each loop
-        for (int i : arr) {
-            System.out.println(i);
-        }
-        for (String se : s) {
-            System.out.println(se);
-        }
-
-
     }
-
 }
