@@ -7,10 +7,8 @@ import java.util.Iterator;
 public class FirstArraylist {
     public static void main(String[] args) {
         //first arraylist
-        ArrayList ArrayListOne = new ArrayList<>(Arrays.asList(30,20,40,10));
-       // ArrayListOne.add(10);
-       // ArrayListOne.add(20);
-       // ArrayListOne.add(30);
+        ArrayList ArrayListOne = new ArrayList<>(Arrays.asList(30, 20, 40, 10));
+
         // Second arratlist
         ArrayList ArrayListTwo = new ArrayList();
         ArrayListTwo.add("suyog");
@@ -29,9 +27,9 @@ public class FirstArraylist {
         System.out.println("by passing value in single line is : ");
         ArrayList ArrayListThree = new ArrayList<>(Arrays.asList(10, 20, 30, 40));
         System.out.println(ArrayListThree);
-        Iterator itrTest = ArrayListThree.iterator();
-        while (itrTest.hasNext()) {
-            System.out.println(itrTest.next());
+        Iterator iteratorObj = ArrayListThree.iterator();
+        while (iteratorObj.hasNext()) {
+            System.out.println(iteratorObj.next());
         }
     }
 }
