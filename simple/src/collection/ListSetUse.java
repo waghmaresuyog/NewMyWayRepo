@@ -2,10 +2,8 @@ package collection;
 
 import java.util.*;
 
-public class ListSetDemo {
-
+public class ListSetUse {
     public static void main(String[] args) {
-
         ArrayList arrayListOne = new ArrayList(Arrays.asList("balaji", "santosh", "sushil", "amruta", "suyog"));
         System.out.println(arrayListOne);
         Iterator iterator = arrayListOne.iterator();
