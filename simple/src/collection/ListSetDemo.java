@@ -1,60 +1,35 @@
 package collection;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Iterator;
-import java.util.Set;
+import java.util.*;
 
 public class ListSetDemo {
 
     public static void main(String[] args) {
 
-        ArrayList l = new ArrayList();
-        l.add("suyog");
-        l.add("Deepak");
-        l.add("Anushree");
-        l.add("Anushree"); // duplicate is allow
-        l.add(null);
-        l.add(null);
-        System.out.println(l);
-
-        Iterator it = l.iterator();
-        while (it.hasNext()) {
-            System.out.println(it.next());
+        ArrayList arrayListOne = new ArrayList(Arrays.asList("balaji", "santosh", "sushil", "amruta", "suyog"));
+        System.out.println(arrayListOne);
+        Iterator iterator = arrayListOne.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
         }
-
-        System.out.println("------------By using Set Method");
+        System.out.println("--------By using Set Method-----------");
         // HashSet Example you can use this to store the number of value
-        Set<String> s = new HashSet();
-        // using <String> Method we can convert the data type of HasSet into String
-        s.add("Suyog");
-        s.add("Mallinath");
-        s.add("Anushree");
-        s.add("Deepak");// duplicate are not allow in Set
-        s.add(null);
-        s.add(null);
-        for (String se : s) {
-            System.out.println(se);
+        Set<String> hashSetOne = new HashSet(Arrays.asList("suyog", "Anushree", "Deepak", null, 10));
+        System.out.println("This is  set method " + hashSetOne);
+        Iterator iteratorHash = hashSetOne.iterator();
+        while (iteratorHash.hasNext()) {
+            System.out.println(iteratorHash.next());
         }
-        System.out.println("This is  set method " + s);
-        Iterator st = s.iterator();
-        while (st.hasNext()) {
-            System.out.println(st.next());
-        }
-
-        System.out.println("hashlist contain suyog or not: --> " + s.contains("Anushree"));
-        if (s.contains("Suyog")) {
-            System.out.println("Suyog is present");
+        System.out.println("hashlist contain suyog or not: --> " + hashSetOne.contains("suyog"));
+        if (hashSetOne.contains("suyog")) {
+            System.out.println("suyog is present");
         } else {
-            System.out.println("Suyog is absent ");
+            System.out.println("suyog is absent ");
         }
-
-        int arr[] = {12, 13, 14, 44};
         // traversing the array with for-each loop
-        for (int i : arr) {
+        int arrayOne[] = {12, 13, 14, 44};
+        for (int i : arrayOne) {
             System.out.println(i);
         }
-
     }
-
 }
