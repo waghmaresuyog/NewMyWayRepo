@@ -1,5 +1,9 @@
 package MediumProblem;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class TacCalculator {
@@ -28,14 +32,13 @@ public class TacCalculator {
         return tax;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         float income;
         float tax;
-        Scanner sc = new Scanner(System.in);
         System.out.println("Enter your income ");
-        income = sc.nextFloat();
-        //InTax T= new InTax(income);
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        income = Float.parseFloat(input.readLine());
         IncomeTax(income);
 
     }
