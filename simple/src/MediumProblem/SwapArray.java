@@ -3,35 +3,38 @@ package MediumProblem;
 import java.util.Arrays;
 
 public class SwapArray {
+    int temp;
+    int lastNumber;
+    boolean flag = false;
 
-    public static void main(String[] args) {
-        int a[]={1,2,3,7};
-        System.out.println(Arrays.toString(a));
-        int temp = a[0];
-        System.out.println(temp);
-        a[0]=a[a.length-1];
-        a[a.length-1] = temp;
-        System.out.println(Arrays.toString(a));
-
-        System.out.println(a[0]);
-        checkPrime(a[0]);
-}
-    static void checkPrime(int n){
-        int i,m=0,flag=0;
-        m=n/2;
-        if(n==0||n==1){
-            System.out.println(n+" is not prime number");
-        }else{
-            for(i=2;i<=m;i++){
-                if(n%i==0){
-                    System.out.println(n+" is not prime number");
-                    flag=1;
-                    break;
-                }
+    public void endSwap(int arrayOne[])
+    {// find last value of array
+        lastNumber=arrayOne[arrayOne.length-1];
+        for(int i=2;i<=(lastNumber/2);i++)
+        {
+            if (lastNumber % i ==0){
+                flag=true;
+                System.out.println("The last Number is :"+lastNumber+"And it is not prime Number");
+                break;
             }
-            if(flag==0)  { System.out.println(n+" is prime number"); }
-        }//end of else
+        }
+        //swap the array if last element is prime
+
+        if (flag== false) {
+            System.out.println("Array last element is : "+lastNumber+"   And Number is prime");
+            temp= arrayOne[0];
+            arrayOne[0]=lastNumber;
+            arrayOne[arrayOne.length-1]=temp;
+            System.out.println("new array is : "+Arrays.toString(arrayOne));
+        }else {
+            System.out.println("Last number of array is :"+lastNumber+"is not prime so not swaped");
+        }
     }
 
+    public static void main(String[] args) {
+        SwapArray swapArray = new SwapArray();
+        int[] arrayOne = new int[]{1, 2, 3, 7};
+        swapArray.endSwap(arrayOne);
+    }
 }
 
