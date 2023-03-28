@@ -28,6 +28,7 @@ public class ArrayListUse {
         Iterator iteratorObj = ArrayListThree.iterator();
         while (iteratorObj.hasNext()) {
             System.out.println(iteratorObj.next());
+
         }
     }
 }
