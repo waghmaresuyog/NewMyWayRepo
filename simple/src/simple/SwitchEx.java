@@ -7,13 +7,9 @@ import java.util.Scanner;
 
 public class SwitchEx {
 
-    public static void main(String[] args) throws IOException {
-
-        int num;
-        BufferedReader bufferInput = new BufferedReader(new InputStreamReader(System.in));
-        System.out.println("Enter number up to ");
-        num = Integer.parseInt(bufferInput.readLine());
-        switch (num) {
+    public void switchCheck(int caseNumber)
+    {
+        switch (caseNumber) {
             case 5:
                 System.out.println("you are tax free");
                 break;
@@ -25,5 +21,16 @@ public class SwitchEx {
             case 15:
                 System.out.println("you are eligible for 15%");
         }
+    }
+
+    public static void main(String[] args) throws IOException {
+
+        int number;
+        BufferedReader bufferInput = new BufferedReader(new InputStreamReader(System.in));
+        System.out.println("Enter Any Case Number from this :5,7,10,15");
+        number = Integer.parseInt(bufferInput.readLine());
+        SwitchEx switchEx = new SwitchEx();
+        switchEx.switchCheck(number);
+
     }
 }
