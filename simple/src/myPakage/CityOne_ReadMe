@@ -1,0 +1,18 @@
+Coding Exercise Assignment2 -Find Destination City
+You are given the array paths, where paths[i] = [cityAi, cityBi] means there exists a direct path going
+    from cityAi to cityBi. Return the destination city, that is, the city without any path outgoing to another city.
+It is guaranteed that the graph of paths forms a line without any loop,
+    therefore, there will be exactly one destination city.
+Example 1:
+Input: paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
+Output: "Sao Paulo"
+Explanation: Starting at "London" city you will reach "Sao Paulo"
+    city which is the destination city. Your trip consist of: "London" -> "New York" -> "Lima" -> "Sao Paulo".
+
+ Input:
+     paths = [["London","New York"],["New York","Lima"],["Lima","Sao Paulo"]]
+ OutPut :
+    "C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=50565:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple myPakage.CityOne
+    Destination City is : Sao Paulo
+
+    Process finished with exit code 0
