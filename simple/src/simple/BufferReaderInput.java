@@ -14,6 +14,7 @@ public class BufferReaderInput {
         System.out.println("Enter Name:");
         String stringInput = bufferInput.readLine();
         System.out.println("Your Name is " + stringInput);
+        System.out.println("print using var data type");
         var number = 10;
         System.out.println(number);
     }
