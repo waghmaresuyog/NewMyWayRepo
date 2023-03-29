@@ -1,21 +1,17 @@
 package constructorExample;
 
 public class ArgumentCons {
+    int numberOne; // non static variable or global variable
+    static int addiction; // static variable
 
-	int a; // non static variable or global variable
-	static int b; // static variable
+   public ArgumentCons(int numberTwo, int numberThree) {
+        numberOne = numberTwo + numberThree;
+        System.out.println("Message from constructor sum of number is :" + numberOne);
+    }
 
-	ArgumentCons(int num1, int num2) {
-		a = num1 + num2;
-		System.out.println("Message from constructor sum of number is :" + a);
-	}
-
-	public static void main(String[] args) {
-
-		ArgumentCons as = new ArgumentCons(10, 20);
-		b = as.a + 20;
-		System.out.println(" Message from Main method ,The sum of num is " + b);
-
-	}
-
+    public static void main(String[] args) {
+        ArgumentCons argumentCons = new ArgumentCons(10, 20);
+        addiction = argumentCons.numberOne + 20;
+        System.out.println(" Message from Main method ,The sum of num is " + addiction);
+    }
 }
