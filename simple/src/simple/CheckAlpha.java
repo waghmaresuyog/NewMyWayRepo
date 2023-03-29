@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 public class CheckAlpha {
     public static void main(String[] args) throws IOException {
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader bufferInput = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter any key on keyboard ");
-        char ch = (char) input.read();
-        if (Character.isAlphabetic(ch)) {
-            System.out.println(ch + "  Is an alphabet.");
+        char charInput = (char) bufferInput.read();
+        if (Character.isAlphabetic(charInput)) {
+            System.out.println(charInput + "  Is an alphabet.");
         } else {
-            System.out.println(ch + "  Is NOT alphabet.");
+            System.out.println(charInput + "  Is NOT alphabet.");
         }
     }
 }
