@@ -5,7 +5,8 @@ import java.util.Arrays;
 public class MultiArray {
     public static void main(String[] args) {
         System.out.println("printing another array");
-        int arrayId[][] = {{10, 20}, {20, 30}, {20, 30}};//this is array is 3 row and 2 colum
+        //this is array is 3 row and 2 colum
+        int arrayId[][] = {{10, 20}, {20, 30}, {20, 30}};
         System.out.println(arrayId[0].length);
         System.out.println(arrayId.length);
         for (int i = 0; i < 3; i++) {
