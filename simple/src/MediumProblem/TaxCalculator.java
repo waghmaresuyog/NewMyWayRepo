@@ -7,38 +7,45 @@ import java.io.InputStreamReader;
 public class TaxCalculator {
     static float tax;
 
-    public static float IncomeTax(float income) {
-        if (income <= 500000) {
-            System.out.println("You are Tax free");
-        } else if (income >= 500000 && income < 700000) {
-            float taxableAmountOne = income - 500000;
-            tax = (0.10f) * taxableAmountOne;
-            System.out.println("Your are tax is :" + tax);
-        } else if (income > 700000 && income <= 1000000) {
-            float taxableAmountTwo = income - 700000;
-            tax = (0.15f) * taxableAmountTwo + (0.1F * 200000);
-            System.out.println("Your are tax is :" + tax);
-        } else if (income > 1000000 && income <= 1500000) {
-            float taxableAmountThree = income - 1000000;
-            tax = (0.20f) * taxableAmountThree + (0.15F * 300000) + (0.1F * 200000);
-            System.out.println("Your are tax is :" + tax);
-        } else {
-            float taxableAmountFour = income - 1000000;
-            tax = (0.30f) * taxableAmountFour + (0.2F * 500000) + (0.15F * 300000) + (0.1F * 200000);
-            System.out.println("Your are tax is :" + tax);
+    public float IncomeTax(float income) {
+        int slab = (income < 500000) ? 0 : (500000 <= income && income <= 700000)
+                ? 10 : (700000 <= income && income <= 1000000) ? 15 : (1000000 < income && income >= 1500000) ? 30 : 20;
+
+        switch (slab) {
+            case 0:
+                System.out.println("you are tax free ");
+                break;
+            case 10:
+                float taxableAmountOne = income - 500000;
+                tax = (0.10f) * taxableAmountOne;
+                System.out.println("Your are tax is :" + tax);
+                System.out.println("you are in 10 %");
+                break;
+            case 15:
+                float taxableAmountTwo = income - 700000;
+                tax = (0.15f) * taxableAmountTwo + (0.1F * 200000);
+                System.out.println("Your are tax is :" + tax);
+                System.out.println("you are in 15 %");
+                break;
+            case 20:
+                float taxableAmountThree = income - 1000000;
+                tax = (0.20f) * taxableAmountThree + (0.15F * 300000) + (0.1F * 200000);
+                System.out.println("Your are tax is :" + tax);
+                System.out.println("you are in 20 %");
+                break;
+            default:
+                float taxableAmountFour = income - 1000000;
+                tax = (0.30f) * taxableAmountFour + (0.2F * 500000) + (0.15F * 300000) + (0.1F * 200000);
+                System.out.println("Your are tax is :" + tax);
+                System.out.println("you are in 30 %");
         }
         return tax;
     }
 
-    public static void main(String[] args) throws IOException {
-
+    public static void main(String[] args) {
         float income;
-        float tax;
-        System.out.println("Enter your income ");
-        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-        income = Float.parseFloat(input.readLine());
-        IncomeTax(income);
-
+        TaxCalculator taxCalculator = new TaxCalculator();
+        taxCalculator.IncomeTax(600000);
+        taxCalculator.IncomeTax(1200000);
     }
-
 }
