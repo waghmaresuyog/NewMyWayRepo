@@ -30,9 +30,6 @@ public class SwapArray {
         SwapArray swapArray = new SwapArray();
         int[] arrayOne = new int[]{1, 2, 3, 7};
         swapArray.endSwap(arrayOne);
-        int[] arrayTwo = new int[]{1, 2, 3, 8};
-        swapArray.endSwap(arrayTwo);
-
     }
 }
 
