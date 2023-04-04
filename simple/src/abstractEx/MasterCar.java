@@ -6,6 +6,7 @@ public class MasterCar extends CarNew {
         CarNew objCarNew = new CarNew();
         objCarNew.eng();
         objCarNew.run();
+
     }
 }
 

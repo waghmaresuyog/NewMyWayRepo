@@ -6,9 +6,20 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetUse {
+
+    public static void contain(Set hashObj)
+    {
+        // check the element in hash set or not
+        System.out.println("hashlist contain Suyog  or not: --> " + hashObj.contains("Suyog"));
+        if (hashObj.contains("Suyog")) {
+            System.out.println("Suyog is present");
+        } else {
+            System.out.println("Suyog is absent ");
+        }
+    }
     public static void main(String[] args) {
-        //HashSet Example you can use this to store the number of value
-        Set<String> hashObj = new HashSet(Arrays.asList("Suyog","Mallinath","Anushree","Deepak"));
+
+        Set hashObj = new HashSet(Arrays.asList("Suyog","Mallinath","Anushree","Deepak"));
         //using <String> Method we can convert the data type of HasSet into String
         //duplicate are not allow in Set
         hashObj.add(null);
@@ -20,16 +31,9 @@ public class HashSetUse {
             System.out.println(steIterator.next());
         }
         //using for each loop print the hash set
-        for (String stringOne : hashObj) {
+        for (Object stringOne : hashObj) {
             System.out.println(stringOne);
         }
-        // check the element in hash set or not
-        System.out.println("hashlist contain anushree or not: --> " + hashObj.contains("Anushree"));
-        if (hashObj.contains("Suyog")) {
-            System.out.println("Suyog is present");
-        } else {
-            System.out.println("Suyog is absent ");
-        }
-        
+        contain(hashObj);// calling method for check element
     }
 }
