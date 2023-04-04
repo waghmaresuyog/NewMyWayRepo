@@ -4,11 +4,16 @@ import java.util.Scanner;
 
 public class ScannerAllDataType {
 
-    public static void main(String[] args) {
+    public void details() {
+        Scanner scannerInput = new Scanner(System.in);
+        String srtingName;
+        System.out.println("Enter value of string");
+        srtingName = scannerInput.next();
+        System.out.println("value of string is : " + srtingName);
+        System.out.println("-----------------------------------------------");
 
         byte number;
         System.out.println("Enter byte");
-        Scanner scannerInput = new Scanner(System.in);
         number = scannerInput.nextByte();
         System.out.println("Value of Byte is : " + number);
         System.out.println("-----------------------------------------");
@@ -24,16 +29,16 @@ public class ScannerAllDataType {
         numberInt = scannerInput.nextInt();
         System.out.println("value of int is :" + numberInt);
         System.out.println("------------------------------------------");
+
         char charAlpha;
         System.out.println("Enter char value");
         charAlpha = scannerInput.next().charAt(0);
         System.out.println("value of char is :" + charAlpha);
         System.out.println("------------------------------------------");
+    }
 
-        String srtingName;
-        System.out.println("Enter value of string");
-        srtingName = scannerInput.next();
-        System.out.println("value of string is : " + srtingName);
-        System.out.println("-----------------------------------------------");
+    public static void main(String[] args) {
+        ScannerAllDataType scannerAllDataType = new ScannerAllDataType();
+        scannerAllDataType.details();
     }
 }

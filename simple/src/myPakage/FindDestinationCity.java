@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-public class CityOne {
+public class FindDestinationCity {
     public static void main(String[] args) {
         List pairOne = new LinkedList<>();
         pairOne.add("London");
@@ -24,20 +24,20 @@ public class CityOne {
     }
 
     private static String destinationCity(List<List<String>> path) {
-        List<String> out = new ArrayList<>();
-        List<String> in = new ArrayList<>();
+        List<String> outCity = new ArrayList<>();
+        List<String> inCity = new ArrayList<>();
 
         for (int i = 0; i < path.size(); i++) {
             List<String> Element = path.get(i);
             String outElement = Element.get(0);
             String inElement = Element.get(1);
-            out.add(outElement);
-            in.add(inElement);
+            outCity.add(outElement);
+            inCity.add(inElement);
         }
-        for (int j = 0; j < out.size(); j++) {
+        for (int j = 0; j < outCity.size(); j++) {
             //create local variable inElement
-            String inElement = in.get(j);
-            if (!out.contains(inElement))
+            String inElement = inCity.get(j);
+            if (!outCity.contains(inElement))
                 return inElement;
         }
         return null;
