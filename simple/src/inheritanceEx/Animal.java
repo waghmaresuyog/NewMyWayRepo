@@ -6,4 +6,7 @@ public class Animal {
     {
         System.out.println("This animal is Eating from Animal class");
     }
+    public void bite(){
+        System.out.println("i am cat ");
+    }
 }
