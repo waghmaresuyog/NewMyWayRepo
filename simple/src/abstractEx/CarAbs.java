@@ -1,7 +1,7 @@
 package abstractEx;
 
 public abstract class CarAbs {
-    abstract void run();
-    abstract void eng();
+   public abstract void run();
+    public abstract void eng();
 
 }
