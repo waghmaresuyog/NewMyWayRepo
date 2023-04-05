@@ -8,9 +8,8 @@ public class EvenOdd {
             System.out.println("The given is odd");
         }
     }
-
     public static void main(String[] args) {
         EvenOdd evenOdd = new EvenOdd();
-        evenOdd.even_Odd_Number(15);
+        evenOdd.even_Odd_Number(18);
     }
 }
