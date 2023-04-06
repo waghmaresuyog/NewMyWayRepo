@@ -1,8 +1,8 @@
 package encapsulationEx;
 
-public class EmpolyesMain {
+public class EmployeeMain {
     public static void main(String[] args) {
-        Empolyes EmplyesObj = new Empolyes();
+        Employee EmplyesObj = new Employee();
         EmplyesObj.setName("suyog");
         System.out.println("the name of empoyles is :");
         EmplyesObj.getName();

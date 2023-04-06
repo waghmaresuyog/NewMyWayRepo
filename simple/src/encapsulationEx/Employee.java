@@ -1,6 +1,6 @@
 package encapsulationEx;
 
-public class Empolyes {
+public class Employee {
 
     private String name;
     private int id;

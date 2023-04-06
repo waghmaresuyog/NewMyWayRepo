@@ -1,24 +1,13 @@
-
-"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=52412:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple simple.ScannerAllDataType
-Enter byte
-1
-Value of Byte is : 1
------------------------------------------
-Enter short value
-54
-value of short is :54
-------------------------------------------
-Enter int value
-8564
-value of int is :8564
-------------------------------------------
-Enter char value
-s
-value of char is :s
-------------------------------------------
-Enter value of string
-suyog
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=50201:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple simple.ScannerAllDataType
 value of string is : suyog
 -----------------------------------------------
+Value of Byte is : 22
+-----------------------------------------
+value of short is :555
+------------------------------------------
+value of int is :9999663
+------------------------------------------
+value of char is :$
+------------------------------------------
 
 Process finished with exit code 0

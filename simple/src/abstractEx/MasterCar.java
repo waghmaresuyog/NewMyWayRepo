@@ -9,6 +9,3 @@ public class MasterCar extends CarNew {
 
     }
 }
-
-
-

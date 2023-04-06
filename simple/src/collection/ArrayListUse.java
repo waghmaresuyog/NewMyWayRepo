@@ -12,18 +12,18 @@ public class ArrayListUse {
         return arrayListMethod;
     }
 
-    public static void arraylistOnePint() {
-        ArrayList ArrayListOne = new ArrayList<>(Arrays.asList(30, 20, 40, 10));
-        System.out.println("This is First Array list from method : " + ArrayListOne);
+    public static void arrayListOneDisplay() {
+        ArrayList arrayListOne = new ArrayList<>(Arrays.asList(30, 20, 40, 10));
+        System.out.println("This is First Array list from method : " + arrayListOne);
         // Second arratlist
         ArrayList ArrayListTwo = new ArrayList();
         ArrayListTwo.add("suyog");
         ArrayListTwo.add("anushree");
         ArrayListTwo.add("deepak");
-        ArrayListOne.addAll(ArrayListTwo);
+        arrayListOne.addAll(ArrayListTwo);
         System.out.println("------------------ print using iterator method by calling method ------------- ");
         // print using iterator method  it read element one by one
-        Iterator iterator = ArrayListOne.iterator();
+        Iterator iterator = arrayListOne.iterator();
         while (iterator.hasNext()) {
             System.out.println(iterator.next());
         }
@@ -40,7 +40,7 @@ public class ArrayListUse {
     public static void main(String[] args) {
         ArrayList newArraylist = new ArrayList(Arrays.asList(arrayDetail()));
         System.out.println(newArraylist);// using method pring the array list .
-        arraylistOnePint();// calling method to print arraylist
+        arrayListOneDisplay();// calling method to print arraylist
         // adding arraylist value in single line
         System.out.println("by passing value in single line is : ");
         //adding value in array list three

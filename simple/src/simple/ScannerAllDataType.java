@@ -5,34 +5,23 @@ import java.util.Scanner;
 public class ScannerAllDataType {
 
     public void details() {
-        Scanner scannerInput = new Scanner(System.in);
-        String srtingName;
-        System.out.println("Enter value of string");
-        srtingName = scannerInput.next();
+        String srtingName = "suyog";
         System.out.println("value of string is : " + srtingName);
         System.out.println("-----------------------------------------------");
 
-        byte number;
-        System.out.println("Enter byte");
-        number = scannerInput.nextByte();
+        byte number = 22;
         System.out.println("Value of Byte is : " + number);
         System.out.println("-----------------------------------------");
 
-        short shortNumber;
-        System.out.println("Enter short value");
-        shortNumber = scannerInput.nextShort();
+        short shortNumber = 555;
         System.out.println("value of short is :" + shortNumber);
         System.out.println("------------------------------------------");
 
-        int numberInt;
-        System.out.println("Enter int value");
-        numberInt = scannerInput.nextInt();
+        int numberInt = 9999663;
         System.out.println("value of int is :" + numberInt);
         System.out.println("------------------------------------------");
 
-        char charAlpha;
-        System.out.println("Enter char value");
-        charAlpha = scannerInput.next().charAt(0);
+        char charAlpha = '$';
         System.out.println("value of char is :" + charAlpha);
         System.out.println("------------------------------------------");
     }

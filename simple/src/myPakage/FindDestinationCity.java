@@ -1,25 +1,15 @@
 package myPakage;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 public class FindDestinationCity {
     public static void main(String[] args) {
-        List pairOne = new LinkedList<>();
-        pairOne.add("London");
-        pairOne.add("New York");
-        List PairTwo = new LinkedList<>();
-        PairTwo.add("New York");
-        PairTwo.add("Lima");
-        List pairThree = new LinkedList<>();
-        pairThree.add("Lima");
-        pairThree.add("Sao Paulo");
-        List<List<String>> commonPair = new ArrayList<>();
-        commonPair.add(pairOne);
-        commonPair.add(PairTwo);
-        commonPair.add(pairThree);
-        String returnDestination = destinationCity(commonPair);
+        List<List<String>> inputCity = Arrays.asList(Arrays.asList("London", "New York"), Arrays.asList("New York", "Lima"),
+                Arrays.asList("Lima", "Sao Paulo"));
+        String returnDestination = destinationCity(inputCity);
         System.out.println("Destination City is : " + returnDestination);
     }
 
