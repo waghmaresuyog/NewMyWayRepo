@@ -1,8 +1,8 @@
 package constructorExample;
 
 public class ArgumentCons {
-    int numberOne; // non static variable or global variable
-    static int addiction; // static variable
+   private int numberOne; // non static variable or global variable
+   private static int addiction; // static variable
 
    public ArgumentCons(int numberTwo, int numberThree) {
         numberOne = numberTwo + numberThree;

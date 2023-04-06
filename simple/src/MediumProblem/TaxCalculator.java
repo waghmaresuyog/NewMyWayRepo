@@ -45,7 +45,6 @@ public class TaxCalculator {
     }
 
     public static void main(String[] args) {
-        float income;
         TaxCalculator taxCalculator = new TaxCalculator();
         taxCalculator.IncomeTax(600000);
         taxCalculator.IncomeTax(2200000);

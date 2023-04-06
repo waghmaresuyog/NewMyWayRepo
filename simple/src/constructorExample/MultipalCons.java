@@ -1,8 +1,9 @@
 package constructorExample;
 
 public class MultipalCons {
-   public MultipalCons() {
-        int number = 10;
+    private int number = 10;
+    public MultipalCons() {
+
         System.out.println("this is simple constructor  : " + number);
     }
    public MultipalCons(String name) {
@@ -16,6 +17,6 @@ public class MultipalCons {
         MultipalCons multipalConsOne = new MultipalCons();// create object of the constructors or default constroctor
         // System.out.println(ms1);
         MultipalCons multipalConsTwo = new MultipalCons("suyog");// passing argument or parameters
-        MultipalCons multipalConsThree = new MultipalCons(10, 's');// passing argument
+        MultipalCons multipalConsThree = new MultipalCons(30, 's');// passing argument
     }
 }

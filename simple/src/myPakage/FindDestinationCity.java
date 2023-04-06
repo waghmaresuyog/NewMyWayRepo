@@ -24,20 +24,20 @@ public class FindDestinationCity {
     }
 
     private static String destinationCity(List<List<String>> path) {
-        List<String> outCity = new ArrayList<>();
-        List<String> inCity = new ArrayList<>();
+        List<String> outCityElement = new ArrayList<>();
+        List<String> inCityElement = new ArrayList<>();
 
         for (int i = 0; i < path.size(); i++) {
             List<String> Element = path.get(i);
             String outElement = Element.get(0);
             String inElement = Element.get(1);
-            outCity.add(outElement);
-            inCity.add(inElement);
+            outCityElement.add(outElement);
+            inCityElement.add(inElement);
         }
-        for (int j = 0; j < outCity.size(); j++) {
+        for (int j = 0; j < outCityElement.size(); j++) {
             //create local variable inElement
-            String inElement = inCity.get(j);
-            if (!outCity.contains(inElement))
+            String inElement = inCityElement.get(j);
+            if (!outCityElement.contains(inElement))
                 return inElement;
         }
         return null;

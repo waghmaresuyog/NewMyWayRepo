@@ -3,8 +3,8 @@ package MediumProblem;
 import java.util.Arrays;
 
 public class SwapArray {
-    int temp;
-    int lastNumber;
+    private int temp;
+    private int lastNumber;
 
     public void endSwap(int arrayOne[]) {
         // find last value of array

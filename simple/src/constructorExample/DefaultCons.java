@@ -1,7 +1,7 @@
 package constructorExample;
 
 public class DefaultCons {
-    static String name;
+   private static String name;
    public DefaultCons() {
         name = "suyog";
     }

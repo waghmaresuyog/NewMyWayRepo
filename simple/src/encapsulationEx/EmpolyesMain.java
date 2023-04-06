@@ -9,6 +9,7 @@ public class EmpolyesMain {
         EmplyesObj.setId(20);
         System.out.println("Id is here :");
         EmplyesObj.getId();
-
     }
+
+
 }
