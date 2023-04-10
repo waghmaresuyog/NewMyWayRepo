@@ -1,9 +1,8 @@
 /bin/
-out/
 .settings
 .idea
 .project
 .classpath
 simple.iml
-out/
+out
 *.class
