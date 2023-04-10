@@ -4,18 +4,18 @@ public class PatternMethod {
     public static void main(String[] args) {
         pattern(4);
     }
-
     public static void pattern(int row) {
-        for (int i = 1; i <= row; i++) {   //this loop print space in each loop up to i value
-            for (int j = 1; j <= row - i; j++) {
-                System.out.print(" ");// print blank space3
+
+        int one, two, three, four;
+        for (one = 1; one <= row; one++) {
+            for (two = 1; two <= row - one; two++) {
+                System.out.print(" ");
             }
-            for (int k = i; k >= 1; k--) {
-                System.out.print(k);  //in first loop print 1
+            for (three = one; three != 0; three--) {
+                System.out.print(three);
             }
-            for (int l = 2; l <= i; l++) //-
-            {
-                System.out.print(l);
+            for (four = 2; four <= one; four++) {
+                System.out.print(four);
             }
             System.out.println();
         }

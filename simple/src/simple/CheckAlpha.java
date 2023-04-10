@@ -5,10 +5,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Scanner;
-public class CheckAlpha {
 
-    public static void checkAlpha(char charInput)
-    {
+public class CheckAlpha {
+    public static void checkAlpha(char charInput) {
         if (Character.isAlphabetic(charInput)) {
             System.out.println(charInput + "  Is an alphabet.");
         } else {

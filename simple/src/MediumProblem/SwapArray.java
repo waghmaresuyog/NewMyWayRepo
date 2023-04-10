@@ -34,7 +34,7 @@ public class SwapArray {
 
     public static void main(String[] args) {
         SwapArray swapArray = new SwapArray();
-        int[] arrayOne = new int[]{1, 2, 3, 9};
+        int[] arrayOne = new int[]{1, 2, 3, 7};
         swapArray.endSwap(arrayOne);
     }
 }

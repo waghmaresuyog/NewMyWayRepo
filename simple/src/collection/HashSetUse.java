@@ -6,9 +6,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetUse {
-
-    public static void contain(Set hashObj)
-    {
+    public static void contain(Set hashObj) {
         // check the element in hash set or not
         System.out.println("hashlist contain Suyog  or not: --> " + hashObj.contains("Suyog"));
         if (hashObj.contains("Suyog")) {
@@ -18,8 +16,7 @@ public class HashSetUse {
         }
     }
     public static void main(String[] args) {
-
-        Set hashObj = new HashSet(Arrays.asList("Suyog","Mallinath","Anushree","Deepak"));
+        Set hashObj = new HashSet(Arrays.asList("Suyog", "Mallinath", "Anushree", "Deepak"));
         //using <String> Method we can convert the data type of HasSet into String
         //duplicate are not allow in Set
         hashObj.add(null);

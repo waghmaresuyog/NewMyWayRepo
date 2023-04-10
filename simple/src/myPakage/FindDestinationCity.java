@@ -12,11 +12,9 @@ public class FindDestinationCity {
         String returnDestination = destinationCity(inputCity);
         System.out.println("Destination City is : " + returnDestination);
     }
-
     private static String destinationCity(List<List<String>> path) {
         List<String> outCityElement = new ArrayList<>();
         List<String> inCityElement = new ArrayList<>();
-
         for (int i = 0; i < path.size(); i++) {
             List<String> Element = path.get(i);
             String outElement = Element.get(0);
