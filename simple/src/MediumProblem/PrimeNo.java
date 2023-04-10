@@ -2,8 +2,7 @@ package MediumProblem;
 
 public class PrimeNo {
 
-    public void checkPrime(int number)
-    {
+    public void checkPrime(int number) {
         int temp = 0;
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
@@ -17,6 +16,7 @@ public class PrimeNo {
             System.out.println(number + "  Number is not Prime");
         }
     }
+
     public static void main(String[] args) {
         PrimeNo primeNo = new PrimeNo();
         primeNo.checkPrime(8);
