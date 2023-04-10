@@ -1,0 +1,8 @@
+Q. check given character is alphabet or not
+
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=52221:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple simple.CheckAlpha
+Enter any key on keyboard
+s
+s  Is an alphabet.
+
+Process finished with exit code 0

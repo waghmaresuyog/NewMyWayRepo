@@ -1,0 +1,19 @@
+
+Q.1 Write a java program to find tax for employee. The program should
+calculate the income tax to be paid by the employee as per the criteria given below:
+Slab rate              IT rate
+Upto Rs. 7,00,000        Nil
+Above Rs. 7,00,000        (0-5,00,000=nil,5,00,000 – 7,00,000=10%)
+Rs. 7,00,000-10,00,000      15% on additional amount
+Rs. 10,00,000-15,00,000     20% on additional amount
+Above 15,00,000           30% on additional amount
+Result: - income tax is …………………………….
+
+Output :
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=49801:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.TaxCalculator
+Your are tax is :10000.0
+you are in 10 %
+Your are tax is :105000.0
+you are in 20 %
+
+Process finished with exit code 0

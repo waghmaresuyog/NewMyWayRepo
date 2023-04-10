@@ -1,0 +1,23 @@
+
+Output:
+    "C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=55893:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple arrayExample.SimpleArray
+    Printing using toString method [10, 20]
+    ----------Using for loop print the another array----------------------
+    value of array is :
+    50
+    60
+    70
+    80
+    90
+    ------------using for each loop--------------------
+    suyog
+    prasad
+    anushree
+    deepak
+    50
+    60
+    70
+    80
+    90
+
+    Process finished with exit code 0
