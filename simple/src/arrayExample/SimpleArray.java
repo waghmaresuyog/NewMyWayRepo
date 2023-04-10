@@ -3,7 +3,9 @@ package arrayExample;
 import java.util.Arrays;
 
 public class SimpleArray {
-    public static void main(String[] args) {
+
+    public void displaySimpleArray()
+    {
         int arrayOne[] = new int[2];
         arrayOne[0] = 10;
         arrayOne[1] = 20;
@@ -25,5 +27,9 @@ public class SimpleArray {
         for (int intFor : arrayTwo) {
             System.out.println(intFor);
         }
+    }
+    public static void main(String[] args) {
+        SimpleArray simpleArray = new SimpleArray();
+        simpleArray.displaySimpleArray();
     }
 }

@@ -11,6 +11,7 @@ public class ArrayListUse {
 
         return arrayListMethod;
     }
+
     public static void arrayListOneDisplay() {
         ArrayList arrayListOne = new ArrayList<>(Arrays.asList(30, 20, 40, 10));
         System.out.println("This is First Array list from method : " + arrayListOne);
@@ -27,6 +28,7 @@ public class ArrayListUse {
             System.out.println(iterator.next());
         }
     }
+
     public static void display(ArrayList ArrayListThree) {
         System.out.println("Array List using Method :");
         Iterator iteratorObj = ArrayListThree.iterator();
@@ -34,9 +36,10 @@ public class ArrayListUse {
             System.out.println(iteratorObj.next());
         }
     }
+
     public static void main(String[] args) {
-        ArrayList newArraylist = new ArrayList(Arrays.asList(arrayDetail()));
-        System.out.println(newArraylist);// using method pring the array list .
+        ArrayList arrayList = new ArrayList(Arrays.asList(arrayDetail()));
+        System.out.println(arrayList);// using method pring the array list .
         arrayListOneDisplay();// calling method to print arraylist
         // adding arraylist value in single line
         System.out.println("by passing value in single line is : ");

@@ -1,12 +1,12 @@
 package abstractEx;
 
-public class CarNew extends CarAbs {
+public class MarutiCar extends Car {
     @Override
    public void run() {
         System.out.println("car is runing run from car new class ");
     }
     @Override
-    public void eng() {
-        System.out.println("eng is new , eng from car new ");
+    public void engine() {
+        System.out.println("engine is new , engine from Maruti car new ");
     }
 }

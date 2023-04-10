@@ -1,11 +1,11 @@
 package abstractEx;
 
-public class MasterCar extends CarNew {
+public class MasterCar extends MarutiCar {
     public static void main(String[] args) {
         //create object of CarNew class
-        CarNew objCarNew = new CarNew();
-        objCarNew.eng();
-        objCarNew.run();
+        MarutiCar marutiCar = new MarutiCar();
+        marutiCar.engine();
+        marutiCar.run();
 
     }
 }

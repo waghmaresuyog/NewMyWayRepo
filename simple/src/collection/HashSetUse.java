@@ -6,31 +6,31 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class HashSetUse {
-    public static void contain(Set hashObj) {
+    public static void contain(Set hashRecord) {
         // check the element in hash set or not
-        System.out.println("hashlist contain Suyog  or not: --> " + hashObj.contains("Suyog"));
-        if (hashObj.contains("Suyog")) {
+        System.out.println("hashlist contain Suyog  or not: --> " + hashRecord.contains("Suyog"));
+        if (hashRecord.contains("Suyog")) {
             System.out.println("Suyog is present");
         } else {
             System.out.println("Suyog is absent ");
         }
     }
     public static void main(String[] args) {
-        Set hashObj = new HashSet(Arrays.asList("Suyog", "Mallinath", "Anushree", "Deepak"));
+        Set hashRecord = new HashSet(Arrays.asList("Suyog", "Mallinath", "Anushree", "Deepak"));
         //using <String> Method we can convert the data type of HasSet into String
         //duplicate are not allow in Set
-        hashObj.add(null);
-        hashObj.add(null);
-        System.out.println("This is  set method " + hashObj);
+        hashRecord.add(null);
+        hashRecord.add(null);
+        System.out.println("This is  set method " + hashRecord);
         // using Iterator method print the hash set
-        Iterator steIterator = hashObj.iterator();
+        Iterator steIterator = hashRecord.iterator();
         while (steIterator.hasNext()) {
             System.out.println(steIterator.next());
         }
         //using for each loop print the hash set
-        for (Object stringOne : hashObj) {
+        for (Object stringOne : hashRecord) {
             System.out.println(stringOne);
         }
-        contain(hashObj);// calling method for check element
+        contain(hashRecord);// calling method for check element
     }
 }

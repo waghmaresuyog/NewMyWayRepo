@@ -9,10 +9,10 @@ public class MethodArray {
         int arrayValue[][] = new int[][]{{5, 5}, {6, 6}};
         return arrayValue;
     }
-    public static void pringArray(int paraArray[][]) {
-        for (int i = 0; i < paraArray.length; i++) {
-            for (int j = 0; j < paraArray.length; j++) {
-                System.out.print(paraArray[i][j] + "  ");
+    public static void pringArray(int argumentArray[][]) {
+        for (int i = 0; i < argumentArray.length; i++) {
+            for (int j = 0; j < argumentArray.length; j++) {
+                System.out.print(argumentArray[i][j] + "  ");
             }
             System.out.println(" ");
         }
