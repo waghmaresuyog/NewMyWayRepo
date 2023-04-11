@@ -23,13 +23,11 @@ public class LinkedListUse {
     }
 
 
-
     public static void main(String[] args) {
         LinkedListUse linkedListUse = new LinkedListUse();
         linkedListUse.displayLinkedListUse();
         System.out.println("--------------- Iterator example below---------------");
         ArrayList arrayListOne = new ArrayList(Arrays.asList(10, 20, 30, 50, "Suyog", "Santosh", "Deepak"));
-
         //using Iterator methods we can get the data one by one
         Iterator iteratorArray = arrayListOne.iterator();
         while (iteratorArray.hasNext()) {

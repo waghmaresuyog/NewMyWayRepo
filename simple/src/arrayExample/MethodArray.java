@@ -5,14 +5,16 @@ public class MethodArray {
         int arrayValue[][] = returnArray();
         pringArray(arrayValue);
     }
+
     public static int[][] returnArray() {
         int arrayValue[][] = new int[][]{{5, 5}, {6, 6}};
         return arrayValue;
     }
+
     public static void pringArray(int argumentArray[][]) {
-        for (int i = 0; i < argumentArray.length; i++) {
-            for (int j = 0; j < argumentArray.length; j++) {
-                System.out.print(argumentArray[i][j] + "  ");
+        for (int count = 0; count < argumentArray.length; count++) {
+            for (int countTwo = 0; countTwo < argumentArray.length; countTwo++) {
+                System.out.print(argumentArray[count][countTwo] + "  ");
             }
             System.out.println(" ");
         }

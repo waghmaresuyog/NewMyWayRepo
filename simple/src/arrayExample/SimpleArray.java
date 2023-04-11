@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 public class SimpleArray {
 
-    public void displaySimpleArray()
-    {
+    public void displaySimpleArray() {
         int arrayOne[] = new int[2];
         arrayOne[0] = 10;
         arrayOne[1] = 20;
@@ -14,8 +13,8 @@ public class SimpleArray {
         // Other way to use array
         int arrayTwo[] = {50, 60, 70, 80, 90};
         System.out.println("value of array is : ");
-        for (int j = 0; j < arrayTwo.length; j++) {
-            System.out.println(arrayTwo[j]);
+        for (int count = 0; count < arrayTwo.length; count++) {
+            System.out.println(arrayTwo[count]);
         }
         System.out.println("------------using for each loop--------------------");
         String arrayString[] = {"suyog", "prasad", "anushree", "deepak"};
@@ -28,6 +27,7 @@ public class SimpleArray {
             System.out.println(intFor);
         }
     }
+
     public static void main(String[] args) {
         SimpleArray simpleArray = new SimpleArray();
         simpleArray.displaySimpleArray();

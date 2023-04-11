@@ -31,9 +31,9 @@ public class ArrayListUse {
 
     public static void display(ArrayList ArrayListThree) {
         System.out.println("Array List using Method :");
-        Iterator iteratorObj = ArrayListThree.iterator();
-        while (iteratorObj.hasNext()) {
-            System.out.println(iteratorObj.next());
+        Iterator iterator = ArrayListThree.iterator();
+        while (iterator.hasNext()) {
+            System.out.println(iterator.next());
         }
     }
 

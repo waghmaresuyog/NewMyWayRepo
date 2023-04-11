@@ -26,8 +26,8 @@ public class ListSetUse {
         }
         // traversing the array with for-each loop
         int arrayOne[] = {12, 13, 14, 44};
-        for (int i : arrayOne) {
-            System.out.println(i);
+        for (int count : arrayOne) {
+            System.out.println(count);
         }
     }
 }
