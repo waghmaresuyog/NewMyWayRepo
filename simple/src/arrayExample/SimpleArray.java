@@ -23,8 +23,8 @@ public class SimpleArray {
             System.out.println(temp);
         }
         //traversing the array with for-each loop
-        for (int intFor : arrayTwo) {
-            System.out.println(intFor);
+        for (int index : arrayTwo) {
+            System.out.println(index);
         }
     }
 

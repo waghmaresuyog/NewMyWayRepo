@@ -8,14 +8,14 @@ public class SwapArray {
 
     public void endSwap(int arrayOne[]) {
         lastNumber = arrayOne[arrayOne.length - 1];
-        int i, m = 0, flag = 0;
-        m = lastNumber / 2;
+        int index, quotient = 0, flag = 0;
+        quotient = lastNumber / 2;
         if (lastNumber == 0 || lastNumber == 1) {
             System.out.println(lastNumber + " is not prime number" +
                     "  The array is :" + Arrays.toString(arrayOne));
         } else {
-            for (i = 2; i <= m; i++) {
-                if (lastNumber % i == 0) {
+            for (index = 2; index <= quotient; index++) {
+                if (lastNumber % index == 0) {
                     System.out.println(lastNumber + " is not prime number" +
                             "The array is :" + Arrays.toString(arrayOne));
                     flag = 1;

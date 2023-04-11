@@ -12,19 +12,20 @@ public class FindDestinationCity {
         String returnDestination = destinationCity(inputCity);
         System.out.println("Destination City is : " + returnDestination);
     }
+
     private static String destinationCity(List<List<String>> path) {
         List<String> outCityElement = new ArrayList<>();
         List<String> inCityElement = new ArrayList<>();
-        for (int i = 0; i < path.size(); i++) {
-            List<String> Element = path.get(i);
+        for (int index = 0; index < path.size(); index++) {
+            List<String> Element = path.get(index);
             String outElement = Element.get(0);
             String inElement = Element.get(1);
             outCityElement.add(outElement);
             inCityElement.add(inElement);
         }
-        for (int j = 0; j < outCityElement.size(); j++) {
+        for (int count = 0; count < outCityElement.size(); count++) {
             //create local variable inElement
-            String inElement = inCityElement.get(j);
+            String inElement = inCityElement.get(count);
             if (!outCityElement.contains(inElement))
                 return inElement;
         }

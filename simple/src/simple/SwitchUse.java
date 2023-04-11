@@ -3,9 +3,8 @@ package simple;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 
-public class SwitchEx {
+public class SwitchUse {
     public void switchCheck(int caseNumber) {
         switch (caseNumber) {
             case 5:
@@ -25,7 +24,7 @@ public class SwitchEx {
         BufferedReader bufferInput = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter Any Case Number from this :5,7,10,15");
         number = Integer.parseInt(bufferInput.readLine());
-        SwitchEx switchEx = new SwitchEx();
+        SwitchUse switchEx = new SwitchUse();
         switchEx.switchCheck(number);
     }
 }
