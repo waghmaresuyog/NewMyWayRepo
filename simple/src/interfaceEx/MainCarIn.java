@@ -6,9 +6,9 @@ public class MainCarIn implements CarIn {
         System.out.println("car is runing form main car ");
     }
     public static void main(String[] args) {
-        MainCarIn objMain = new MainCarIn();
-        objMain.run();
-        CarIn objHero = new Hero();
-        objHero.run();
+        MainCarIn mainCarIn = new MainCarIn();
+        mainCarIn.run();
+        CarIn hero = new Hero();
+        hero.run();
     }
 }
