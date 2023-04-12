@@ -6,11 +6,11 @@ public class StringMerge {
         int bLen = nameTwo.length();
         int max = Math.max(aLen, bLen);
         String word = "";
-        for (int i = 0; i < max; i++) {
-            if (i <= aLen - 1)
-                word += nameOne.substring(i, i + 1);
-            if (i <= bLen - 1)
-                word += nameTwo.substring(i, i + 1);
+        for (int count = 0; count < max; count++) {
+            if (count <= aLen - 1)
+                word += nameOne.substring(count, count + 1);
+            if (count <= bLen - 1)
+                word += nameTwo.substring(count, count + 1);
         }
         return word;
     }
