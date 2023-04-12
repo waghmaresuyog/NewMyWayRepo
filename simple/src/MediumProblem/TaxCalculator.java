@@ -12,22 +12,22 @@ public class TaxCalculator {
                 ? 2 : (income <= 1500000) ? 3 : 4;
         switch (slab) {
             case 1:
-                System.out.println(" your income is "+income+"  and you are tax free ");
+                System.out.println(" your income is " + income + "  and you are tax free ");
                 break;
             case 2:
                 float taxableAmountTwo = income - 700000;
                 tax = (0.15f) * taxableAmountTwo + (0.1F * 200000);
-                System.out.println( " your income is "+income+ "  Your are tax is 15 % :" + tax);
+                System.out.println(" your income is " + income + "  Your are tax is 15 % :" + tax);
                 break;
             case 3:
                 float taxableAmountThree = income - 1000000;
                 tax = (0.20f) * taxableAmountThree + (0.15F * 300000) + (0.1F * 200000);
-                System.out.println(" your income is "+income+ "  Your are tax is 20 % :" + tax);
+                System.out.println(" your income is " + income + "  Your are tax is 20 % :" + tax);
                 break;
             case 4:
                 float taxableAmountFour = income - 1000000;
                 tax = (0.30f) * taxableAmountFour + (0.2F * 500000) + (0.15F * 300000) + (0.1F * 200000);
-                System.out.println(" your income is "+income+ "  Your are tax is 30 % :" + tax);
+                System.out.println(" your income is " + income + "  Your are tax is 30 % :" + tax);
                 break;
             default:
                 System.out.println("Enter valid income");
