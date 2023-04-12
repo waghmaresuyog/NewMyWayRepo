@@ -10,6 +10,4 @@ public class EmployeeMain {
         System.out.println("Id is here :");
         EmplyesObj.getId();
     }
-
-
 }

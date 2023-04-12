@@ -1,12 +1,14 @@
 package constructorExample;
 
 public class DefaultCons {
-    private static String name;
+    private String name;
+
     public DefaultCons() {
         name = "suyog";
     }
+
     public static void main(String[] args) {
         DefaultCons defaultCons = new DefaultCons();
-        System.out.println("the value of name is :" + name);
+        System.out.println(defaultCons.name);
     }
 }

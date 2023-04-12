@@ -3,12 +3,11 @@ package collection;
 import java.util.*;
 
 public class LinkedListUse {
-
     public void displayLinkedListUse() {
         // Linked list follow the index value ,duplicate are allow
         //allow null value , multiple datatype  are allow
-        LinkedList linkedListOne = new LinkedList(Arrays.asList("suyog", "Anushree", "Deepak", "rajeshree", 30, "santosh"));
-        //
+        LinkedList linkedListOne = new LinkedList(Arrays.asList("suyog", "Anushree", "Deepak",
+                "rajeshree", 30, "santosh"));
         System.out.println(linkedListOne);
         // add element at first
         linkedListOne.addFirst("suyog waghmare");
@@ -21,7 +20,6 @@ public class LinkedListUse {
         // get the element last value from list
         System.out.println(linkedListOne.getLast());
     }
-
 
     public static void main(String[] args) {
         LinkedListUse linkedListUse = new LinkedListUse();
