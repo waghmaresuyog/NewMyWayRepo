@@ -8,8 +8,8 @@ public class TaxCalculator {
     private float tax;
 
     public float IncomeTax(float income) {
-        int slab = (income < 700000) ? 1 : (income > 500000 && income <= 1000000)
-                ? 2 : (income <= 1500000) ? 3 : 4;
+        int slab = (income <= 700000) ? 1 : (income > 700000 && income <= 1000000) ? 2 :
+                (income>1000000 && income <= 1500000) ? 3 : 4;
         switch (slab) {
             case 1:
                 System.out.println(" your income is " + income + "  and you are tax free ");

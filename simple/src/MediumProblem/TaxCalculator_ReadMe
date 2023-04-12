@@ -10,7 +10,7 @@ Above 15,00,000           30% on additional amount
 Result: - income tax is …………………………….
 
 Output :
-"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=54326:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.TaxCalculator
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=57434:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.TaxCalculator
  your income is 400000.0  and you are tax free
  your income is 600000.0  and you are tax free
  your income is 900000.0  Your are tax is 15 % :50000.0
@@ -18,6 +18,7 @@ Output :
  your income is 1800000.0  Your are tax is 30 % :405000.0
 
 Process finished with exit code 0
+
 
 
 
