@@ -8,27 +8,23 @@ public class SwapArray {
 
     public void endSwap(int arrayOne[]) {
         lastNumber = arrayOne[arrayOne.length - 1];
-        int index, quotient = 0, flag = 0;
-        quotient = lastNumber / 2;
-        if (lastNumber == 0 || lastNumber == 1) {
-            System.out.println(lastNumber + " is not prime number" +
-                    "  The array is :" + Arrays.toString(arrayOne));
+        int  flag = 0;
+        int mid = lastNumber / 2;
+        for (int counter = 2; counter <= mid; counter++) {
+            if (lastNumber % counter == 0) {
+                flag = 1;
+                break;
+            }
+        }
+        if (flag == 1 || lastNumber == 0 || lastNumber == 1) {
+            System.out.println("Last number of array is : " + lastNumber + " is not prime so not swaped");
+            System.out.println("new array is : " + Arrays.toString(arrayOne));
         } else {
-            for (index = 2; index <= quotient; index++) {
-                if (lastNumber % index == 0) {
-                    System.out.println(lastNumber + " is not prime number" +
-                            "The array is :" + Arrays.toString(arrayOne));
-                    flag = 1;
-                    break;
-                }
-            }
-            if (flag == 0) {
-                System.out.println(lastNumber + " is prime number");
-                temp = arrayOne[0];
-                arrayOne[0] = lastNumber;
-                arrayOne[arrayOne.length - 1] = temp;
-                System.out.println("new array is : " + Arrays.toString(arrayOne));
-            }
+            System.out.println("Array last element is : " + lastNumber + " And Number is prime");
+            temp = arrayOne[0];
+            arrayOne[0] = lastNumber;
+            arrayOne[arrayOne.length - 1] = temp;
+            System.out.println("new array is : " + Arrays.toString(arrayOne));
         }
     }
 
