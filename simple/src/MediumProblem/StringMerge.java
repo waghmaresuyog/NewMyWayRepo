@@ -2,29 +2,22 @@ package MediumProblem;
 
 public class StringMerge {
     public String merge(String nameOne, String nameTwo) {
-        int lengthNameOne = 0, lengthNameTwo = 0;
-        String string = "";
-
-        while (lengthNameOne < nameOne.length() || lengthNameTwo < nameTwo.length()) {
-            if (lengthNameOne < nameOne.length()) {
-                System.out.print(nameOne.charAt(lengthNameOne));
-                string += string+nameOne.charAt(lengthNameOne);
-                lengthNameOne++;
-            }
-            if (lengthNameTwo < nameTwo.charAt(lengthNameTwo)) {
-                System.out.print(nameTwo.charAt(lengthNameTwo));
-                string += string+nameTwo.charAt(lengthNameTwo);
-                lengthNameTwo++;
-            }
+        int aLen = nameOne.length();
+        int bLen = nameTwo.length();
+        int max = Math.max(aLen, bLen);
+        String word = "";
+        for (int i = 0; i < max; i++) {
+            if (i <= aLen - 1)
+                word += nameOne.substring(i, i + 1);
+            if (i <= bLen - 1)
+                word += nameTwo.substring(i, i + 1);
         }
-        return string;
+        return word;
     }
 
     public static void main(String[] args) {
         StringMerge stringMerge = new StringMerge();
-        stringMerge.merge("HI", "there");
-        System.out.println(" ");
-        String word =  stringMerge.merge("abc", "xyz");
-        System.out.println(" this is from word: "+word);
+        String word = stringMerge.merge("abc", "xyz");
+        System.out.println(" this is new word: " + word);
     }
 }
