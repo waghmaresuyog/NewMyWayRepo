@@ -1,4 +1,3 @@
-
 Q.1 Write a java program to find tax for employee. The program should
 calculate the income tax to be paid by the employee as per the criteria given below:
 Slab rate              IT rate
@@ -18,7 +17,3 @@ Output :
  your income is 1800000.0  Your are tax is 30 % :405000.0
 
 Process finished with exit code 0
-
-
-
-
