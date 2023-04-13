@@ -1,0 +1,16 @@
+
+Q2 Java program to print the following patterns
+    1
+  212
+32123
+4321234
+
+Input: 4
+Output:
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=53311:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.PatternMethod
+   1
+  212
+ 32123
+4321234
+
+Process finished with exit code 0

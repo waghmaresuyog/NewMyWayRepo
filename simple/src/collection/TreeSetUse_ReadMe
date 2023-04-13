@@ -1,0 +1,5 @@
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=57842:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple collection.TreeSetUse
+[Anushree, Mayur, Rana, Santosh, Suyog]
+[100, 200, 400, 500]
+
+Process finished with exit code 0

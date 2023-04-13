@@ -1,0 +1,26 @@
+
+Q3. Given an array of ints, swap the first and last elements in the array. Return the modified array. If the last array value is prime no.
+
+swapEnds([1, 2, 3, 7]) → [7, 2, 3, 1]
+
+  Input:[1, 2, 3, 7]
+  Input:[1, 2, 3, 8]
+  Output:
+  old:
+    "C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=57667:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.SwapArray
+    Array last element is : 7   And Number is prime
+    new array is : [7, 2, 3, 1]
+    The last Number is :8  And it is not prime Number
+
+    Process finished with exit code 0
+new:
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=56248:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.SwapArray
+Array last element is : 7   And Number is prime
+new array is : [7, 2, 3, 1]
+
+Process finished with exit code 0
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=58130:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple MediumProblem.SwapArray
+7 is prime number
+new array is : [7, 2, 3, 1]
+
+Process finished with exit code 0

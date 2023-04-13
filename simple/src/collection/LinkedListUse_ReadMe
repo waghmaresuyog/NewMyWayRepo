@@ -1,0 +1,32 @@
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=57790:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple collection.LinkedListUse
+[suyog, Anushree, Deepak, rajeshree, 30, santosh]
+[suyog waghmare, suyog, Anushree, Deepak, rajeshree, 30, santosh, Suyog Waghmare]
+[suyog waghmare, suyog, Anushree, Deepak, rajeshree, 30, santosh]
+santosh
+--------------- Iterator example below---------------
+[10, 20, 30, 50, Suyog, Santosh, Deepak]
+10
+20
+30
+50
+Suyog
+Santosh
+Deepak
+-------------using List Iterator methods we can get the data one by one------
+10
+20
+30
+50
+Suyog
+Santosh
+Deepak
+-------------------------
+Deepak
+Santosh
+Suyog
+50
+30
+20
+10
+
+Process finished with exit code 0

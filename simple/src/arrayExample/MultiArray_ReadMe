@@ -1,0 +1,11 @@
+
+Output:
+    "C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=55882:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple arrayExample.MultiArray
+    printing another array
+    2
+    3
+    10 20
+    20 30
+    20 30
+
+    Process finished with exit code 0
