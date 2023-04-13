@@ -3,34 +3,39 @@ package MediumProblem;
 import java.util.Arrays;
 
 public class SwapArray {
-    private int temp;
-    private int lastNumber;
+    private static int temp;
+    private static int lastNumber;
+    boolean flag = false;
 
-    public void endSwap(int arrayOne[]) {
-        lastNumber = arrayOne[arrayOne.length - 1];
-        int  flag = 0;
-        int mid = lastNumber / 2;
-        for (int counter = 2; counter <= mid; counter++) {
-            if (lastNumber % counter == 0) {
-                flag = 1;
-                break;
-            }
+    public static boolean isPrime(int number, int devisor) {
+        if (number % devisor == 0) {
+            return false;
         }
-        if (flag == 1 || lastNumber == 0 || lastNumber == 1) {
-            System.out.println("Last number of array is : " + lastNumber + " is not prime so not swaped");
-            System.out.println("new array is : " + Arrays.toString(arrayOne));
+        if (devisor * devisor > number) {
+            return true;
+        }
+        return isPrime(number, devisor + 1);
+    }
+
+    public void swapShow(int array[]) {
+        lastNumber = array[array.length - 1];
+        int midElement = 2;
+        flag = isPrime(lastNumber, midElement);
+        if (flag == true && lastNumber != 0 && lastNumber != 1) {
+            System.out.println("Array last element is : " + lastNumber + "Number is prime");
+            temp = array[0];
+            array[0] = lastNumber;
+            array[array.length - 1] = temp;
+            System.out.println("new array is : " + Arrays.toString(array));
         } else {
-            System.out.println("Array last element is : " + lastNumber + " And Number is prime");
-            temp = arrayOne[0];
-            arrayOne[0] = lastNumber;
-            arrayOne[arrayOne.length - 1] = temp;
-            System.out.println("new array is : " + Arrays.toString(arrayOne));
+            System.out.println("Last number of array is : " + lastNumber + " Not prime number so not swaped");
+            System.out.println("new array is : " + Arrays.toString(array));
         }
     }
 
     public static void main(String[] args) {
         SwapArray swapArray = new SwapArray();
         int[] arrayOne = new int[]{1, 2, 3, 7};
-        swapArray.endSwap(arrayOne);
+        swapArray.swapShow(arrayOne);
     }
 }
