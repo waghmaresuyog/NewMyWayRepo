@@ -2,15 +2,19 @@ package MediumProblem;
 
 public class StringMerge {
     public String merge(String nameOne, String nameTwo) {
-        int aLen = nameOne.length();
-        int bLen = nameTwo.length();
+        int aLen = 0;
+        int bLen = 0;
         int max = Math.max(aLen, bLen);
         String word = "";
-        for (int count = 0; count < max; count++) {
-            if (count <= aLen - 1)
-                word += nameOne.substring(count, count + 1);
-            if (count <= bLen - 1)
-                word += nameTwo.substring(count, count + 1);
+        while (aLen < nameOne.length() || bLen < nameTwo.length()) {
+            if (aLen < nameOne.length()) {
+                word += nameOne.charAt(aLen);
+                aLen++;
+            }
+            if (bLen < nameTwo.charAt(bLen)) {
+                word += nameTwo.charAt(bLen);
+                bLen++;
+            }
         }
         return word;
     }
