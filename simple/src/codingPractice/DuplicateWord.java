@@ -1,5 +1,7 @@
 package codingPractice;
 
+import java.util.Arrays;
+
 public class DuplicateWord {
 
     public static void checkDuplicateWord(String sentence) {
@@ -27,5 +29,6 @@ public class DuplicateWord {
     public static void main(String[] args) {
         String sentence = "Big black bug bit a big black dog on his big black nose";
         DuplicateWord.checkDuplicateWord(sentence);
+
     }
 }
