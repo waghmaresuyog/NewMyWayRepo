@@ -5,8 +5,8 @@ public class AreaOfTriangle {
 
         double base = 6.0;
         double height = 4.0;
-        Triangle triangle = new Triangle(base,height);
+        Triangle triangle = new Triangle(base, height);
         double area = triangle.calculateArea();
-        System.out.println("the area of Triangle is :" +area);
+        System.out.println("the area of Triangle is :" + area);
     }
 }
