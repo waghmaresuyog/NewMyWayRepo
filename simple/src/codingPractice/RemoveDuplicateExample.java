@@ -1,8 +1,6 @@
 package codingPractice;
 
 public class RemoveDuplicateExample {
-
-
     public static int removeDuplicateElements(int arrayNumber[], int length) {
         if (length == 0 || length == 1) {
             return length;
