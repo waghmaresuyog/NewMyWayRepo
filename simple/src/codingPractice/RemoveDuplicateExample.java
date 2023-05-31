@@ -5,19 +5,20 @@ public class RemoveDuplicateExample {
         if (length == 0 || length == 1) {
             return length;
         }
-        int[] tempArray = new int[length];
-        int tempNum = 0;
+        int[] buffer = new int[length];
+
+        int temporaryNumber = 0;
         for (int count = 0; count < length - 1; count++) {
             if (arrayNumber[count] != arrayNumber[count + 1]) {
-                tempArray[tempNum++] = arrayNumber[count];
+                buffer[temporaryNumber++] = arrayNumber[count];
             }
         }
-        tempArray[tempNum++] = arrayNumber[length - 1];
+        buffer[temporaryNumber++] = arrayNumber[length - 1];
         // Changing original array
-        for (int index = 0; index < tempNum; index++) {
-            arrayNumber[index] = tempArray[index];
+        for (int index = 0; index < temporaryNumber; index++) {
+            arrayNumber[index] = buffer[index];
         }
-        return tempNum;
+        return temporaryNumber;
     }
 
     public static void main(String args[]) {
