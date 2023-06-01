@@ -1,7 +1,6 @@
 package codingPractice;
 
 public class AreaCalculator {
-
     public static void main(String[] args) {
         Cricle cricle = new Cricle("Red",5.0);
         cricle.display();
