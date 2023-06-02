@@ -1,8 +1,6 @@
 package codingPractice;
 
-
 public class VerifyPassword {
-
     public boolean isValidPassword(String password) {
         int passwordLength = 8;
         if (password.length() < passwordLength) {
@@ -40,6 +38,5 @@ public class VerifyPassword {
         } else {
             System.out.println("Password is not valid: " + password);
         }
-
     }
 }
