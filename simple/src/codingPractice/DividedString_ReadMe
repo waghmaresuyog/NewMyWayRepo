@@ -1,0 +1,8 @@
+problem on Java Program to divide a string in 'N' equal parts.
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=58273:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple codingPractice.DivideString
+3 equal parts of given string are
+aaaa
+bbbb
+cccc
+
+Process finished with exit code 0
