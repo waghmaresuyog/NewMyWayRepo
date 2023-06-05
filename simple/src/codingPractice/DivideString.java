@@ -2,8 +2,8 @@ package codingPractice;
 
 public class DivideString {
     public static void main(String[] args) {
-        String stringComplete = "aaaabbbbcccc";
-        int length = stringComplete.length();
+        String bunchOfString = "aaaabbbbcccc";
+        int length = bunchOfString.length();
         int numberOfPart = 3;
         int temporary = 0, chars = length / numberOfPart;
         String[] equalStr = new String[numberOfPart];
@@ -11,7 +11,7 @@ public class DivideString {
             System.out.println("Sorry this string cannot be divided into " + numberOfPart + " equal parts.");
         } else {
             for (int index = 0; index < length; index = index + chars) {
-                String part = stringComplete.substring(index, index + chars);
+                String part = bunchOfString.substring(index, index + chars);
                 equalStr[temporary] = part;
                 temporary++;
             }
