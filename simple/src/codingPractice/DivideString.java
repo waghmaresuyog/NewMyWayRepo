@@ -2,7 +2,7 @@ package codingPractice;
 
 public class DivideString {
     public static void main(String[] args) {
-        String bunchOfString = "aaaabbbbcccc";
+        String bunchOfString = "i love java";
         int length = bunchOfString.length();
         int numberOfPart = 3;
         int temporary = 0, chars = length / numberOfPart;
