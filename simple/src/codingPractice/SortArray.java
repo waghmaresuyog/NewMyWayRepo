@@ -1,6 +1,7 @@
 package codingPractice;
 
 public class SortArray {
+
     public static void main(String[] args) {
         int arrayNumber[] = new int[]{5, 2, 8, 7, 1};
         int temporary = 0;
