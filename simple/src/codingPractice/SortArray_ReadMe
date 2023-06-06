@@ -1,0 +1,10 @@
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=60669:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple codingPractice.SortArray
+Elements of original array:
+5 2 8 7 1  Elements of array sorted in ascending order:
+1
+2
+5
+7
+8
+
+Process finished with exit code 0
