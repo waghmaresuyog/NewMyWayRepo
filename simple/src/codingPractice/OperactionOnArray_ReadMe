@@ -1,0 +1,12 @@
+java program to perform various Array list operation
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=53033:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath C:\Users\suyogw\Desktop\Auto\NewMyWayRepo\simple\out\production\simple codingPractice.OperactionOnArrayList
+Original ArrayList: [5, 3, 8, 2, 1]
+Sorted ArrayList (Ascending Order): [1, 2, 3, 5, 8]
+Reversed ArrayList: [8, 5, 3, 2, 1]
+Maximum value in the ArrayList: 8
+Minimum value in the ArrayList: 1
+ArrayList after removing element at index 2: [8, 5, 2, 1]
+ArrayList contains 5: true
+ArrayList after clearing all elements: []
+
+Process finished with exit code 0
