@@ -19,7 +19,7 @@ public class SortArray {
         }
         System.out.println(" Elements of array sorted in ascending order: ");
         for (int index = 0; index < arrayNumber.length; index++) {
-            System.out.print(arrayNumber[index] + " ");
+            System.out.println(arrayNumber[index] + " ");
         }
     }
 }
