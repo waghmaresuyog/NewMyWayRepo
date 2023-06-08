@@ -1,0 +1,11 @@
+Write a Java program to create a class called "Book" with attributes for title, author, and ISBN,
+ and methods to add and remove books from a collection.
+Output:
+ List of book is :
+ Book Name : C language  By  :deepak  ISBN : 123456
+ Book Name : Core java By  :santosh  ISBN : 132165
+
+ After removing the book the book list is
+ Book Name : Core java By  :santosh  ISBN : 132165
+
+ Process finished with exit code 0
