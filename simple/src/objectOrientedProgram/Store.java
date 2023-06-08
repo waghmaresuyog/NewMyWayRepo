@@ -14,14 +14,15 @@ public class Store {
         ArrayList<Book> bookCollection = Book.getBookCollection();
         System.out.println("List of book is : ");
         for (Book book : bookCollection) {
-            System.out.println("Book Name : " + book.getTitle() + " By  :" + book.getAuthor() + "  ISBN : " + book.getISBN());
+            System.out.println("Book Name : " + book.getTitle() + " By  :" + book.getAuthor() +
+                    "  BookNumber : " + book.getbookNumber());
         }
         System.out.println(" ");
         Book.remove_Book(book1);
         System.out.println("After removing the book the book list is ");
         for (Book book : bookCollection) {
-            System.out.println("Book Name : " + book.getTitle() + " By  :" + book.getAuthor() + "  ISBN : " + book.getISBN());
+            System.out.println("Book Name : " + book.getTitle() + " By  :" + book.getAuthor() +
+                    "  BookNumber : " + book.getbookNumber());
         }
-
     }
 }
