@@ -1,0 +1,16 @@
+Write a Java program to create a class called "Student" with a name, Roll No, and Subject attributes,
+and methods to add and remove courses.
+Output:
+Student details is :
+Name is : Deepak
+Roll No is :1
+Name is : Tanaji
+Roll No is :2
+Adding Subject to Student :Deepak
+Student Name : Deepak  Subject is [Math, Java]
+Adding Subject to student  Tanaji
+Student name : Tanaji  Subject is : [Matlab, python]
+removing subject form Deepak
+after removing subject of Deepak is : [Java]
+
+Process finished with exit code 0
