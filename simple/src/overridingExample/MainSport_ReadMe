@@ -1,0 +1,11 @@
+Write a Java program to create a base class Sports with a method called play().
+Create three subclasses: Football, Basketball, and Cricket.
+Override the play() method in each subclass to play a specific statement for each sport.
+
+Output:
+Playing a sport
+we are playing Football
+the playing the Basketball
+we are playing cricket
+
+Process finished with exit code 0
