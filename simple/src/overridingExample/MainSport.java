@@ -8,12 +8,9 @@ public class MainSport {
         Football football = new Football();
         Basketball basketball = new Basketball();
         Cricket cricket = new Cricket();
-
         sport.play();
         football.play();
         basketball.play();
         cricket.play();
     }
-
-
 }
