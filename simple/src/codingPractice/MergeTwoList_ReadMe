@@ -1,0 +1,14 @@
+Write a Java program to create a generic method that takes two lists of the same type
+and merges them into a single list. This method alternates the elements of each list.
+Output:
+List of Numbers:
+[1, 3, 6, 7]
+[9, 4, 2, 8]
+Unsorted Number list is : [1, 9, 3, 4, 6, 2, 7, 8]
+Merged and Sorted Numbers:
+[1, 2, 3, 4, 6, 7, 8, 9]
+List of Colors:
+[Red, Green, Blue]
+[White, Black, Orange, Pink]
+Merged and Sorted Colors:
+[Black, Blue, Green, Orange, Pink, Red, White]
