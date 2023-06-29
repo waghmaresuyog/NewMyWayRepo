@@ -24,6 +24,5 @@ public class EvenOddSum {
         List<Double> doublesList = List.of(2.0, 1.5, 4.5, 2.5, 1.5);
         calculatorSum(integersList);
         calculatorSum(doublesList);
-
     }
 }
