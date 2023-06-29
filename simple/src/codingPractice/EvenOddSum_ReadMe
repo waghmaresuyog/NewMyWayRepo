@@ -1,0 +1,10 @@
+Write a Java program to create a generic method that takes a list of numbers and
+print the sum of all the even and odd numbers.
+
+Output:
+The original number of list is : [1, 2, 3, 4, 5, 6, 7]
+sum of Even Number :  12.0
+sum of Odd Number is :  16.0
+The original number of list is : [2.0, 1.5, 4.5, 2.5, 1.5]
+sum of Even Number :  2.0
+sum of Odd Number is :  10.0
