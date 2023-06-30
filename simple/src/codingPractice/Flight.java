@@ -58,5 +58,4 @@ public class Flight {
     public void setConfirmationNumber(int confirmationNumber) {
         this.confirmationNumber = confirmationNumber;
     }
-
 }

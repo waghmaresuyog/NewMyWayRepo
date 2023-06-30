@@ -1,6 +1,6 @@
 package codingPractice;
 
-public class Main {
+public class SearchFlight {
 
     public static void main(String[] args) {
 
@@ -15,7 +15,5 @@ public class Main {
                 "2022-09-05", 1, 100.00);
         // Cancel a flight or hotel reservation based on reservation number
         app.cancelReservation(12345670);
-
-
     }
 }
