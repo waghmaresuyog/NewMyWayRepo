@@ -33,5 +33,6 @@ public class SubstringBreaker {
         String[] dictionary = {"darwin", "box", "darwinbox"};
         int result = countUnusedCharacters(stringWord, dictionary);
         System.out.println(result);
+        System.out.print("Count of pairs is " +  result + "\n");
     }
 }
