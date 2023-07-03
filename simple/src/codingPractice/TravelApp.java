@@ -8,6 +8,7 @@ public class TravelApp {
     private ArrayList<Hotel> hotels;
 
     public TravelApp() {
+
         this.flights = new ArrayList<Flight>();
         this.hotels = new ArrayList<Hotel>();
     }
