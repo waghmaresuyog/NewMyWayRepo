@@ -1,0 +1,12 @@
+Problem : Write a Java program to create a class with methods to search for flights and hotels, and to book
+and cancel reservations.
+
+
+Output:
+Searching for flights from New York to London on 2022-09-01 for 1 passengers.
+Searching for hotels in London from 2022-08-01 to 2022-09-05 for 2 guests.
+Flight booked! Confirmation number: 885870
+Flight booked! Confirmation number: 458735
+Hotel booked! Confirmation number: 451741
+No reservation found with confirmation number 12345670.
+
