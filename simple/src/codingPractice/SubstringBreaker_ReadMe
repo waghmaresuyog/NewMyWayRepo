@@ -1,0 +1,10 @@
+Problem : Extra Characters in a String
+Input: s = "darwinsbox", dictionary = ["darwin","box","darwinbox"]
+Output: 1
+Explanation: We can break s in two substrings: "darwin" from index 0 to 5 and "box" from index 7 to 9.
+There is only 1 unused character (at index 6), so we return 1.
+
+Output:
+1
+
+Process finished with exit code 0
