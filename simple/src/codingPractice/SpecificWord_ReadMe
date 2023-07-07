@@ -1,0 +1,6 @@
+Write a Java program to implement a lambda expression to check if a list of strings contains a specific word.
+The colour list is : [Red, Green, Blue, Orange, Black]
+Is the color Orange present in the list? true
+
+Is the word White present in the list? false
+
