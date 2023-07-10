@@ -1,6 +1,7 @@
 package codingPractice;
 
 public class AdditionOfMatrix {
+
     public static void main(String[] args) {
         int matrixFirst[][] = {{1, 3, 4}, {2, 4, 3}, {3, 4, 5}};
         int matrixSecond[][] = {{1, 3, 4}, {2, 4, 3}, {1, 2, 4}};
@@ -29,12 +30,11 @@ public class AdditionOfMatrix {
         for (int rowIndex = 0; rowIndex < 3; rowIndex++) {
             for (int columnIndex = 0; columnIndex < 3; columnIndex++) {
                 //Addiction fo Two Matrix
-                sumOfMatrix[rowIndex][columnIndex] = matrixFirst[rowIndex][columnIndex] + matrixSecond[rowIndex][columnIndex];
+                sumOfMatrix[rowIndex][columnIndex] = matrixFirst[rowIndex][columnIndex]
+                        + matrixSecond[rowIndex][columnIndex];
                 System.out.print(sumOfMatrix[rowIndex][columnIndex] + " ");
             }
             System.out.println();
         }
-
     }
-
 }
