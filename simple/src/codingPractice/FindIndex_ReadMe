@@ -1,0 +1,7 @@
+Write a Java program to find the index of an array element.and find Duplicate value in given array
+Input array :25, 14, 56, 15, 36, 56, 77, 18, 29, 49
+Output:
+Index position of 25 is: 0
+Index position of 77 is: 6
+Duplicate Element in given Array is :
+56
