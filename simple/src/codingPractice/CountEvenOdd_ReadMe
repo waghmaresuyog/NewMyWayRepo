@@ -1,0 +1,7 @@
+Write a Java program to find the number of even and odd integers in a given array of integers.
+And calculate the average value of array elements.
+
+Original Array: [5, 7, 2, 4, 9]
+Number of even numbers : 2
+Number of odd numbers  : 3
+Average value of the array elements is : 5.0
