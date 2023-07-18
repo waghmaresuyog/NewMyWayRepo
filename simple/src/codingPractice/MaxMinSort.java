@@ -9,19 +9,18 @@ public class MaxMinSort {
         int temp[] = new int[length];
         int smallNumber = 0, largeNumber = length - 1;
         boolean flag = true;
-
         for (int index = 0; index < length; index++) {
             if (flag)
                 temp[index] = numbers[largeNumber--];
             else
                 temp[index] = numbers[smallNumber++];
-
             flag = !flag;
         }
         return temp;
     }
 
     public static void main(String[] args) {
+
         int numbers[] = new int[]{10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         System.out.println("Original Array " + Arrays.toString(numbers));
         int result[];
