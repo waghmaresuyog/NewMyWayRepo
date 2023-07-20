@@ -1,0 +1,8 @@
+Write a Java program to separate even and odd numbers from a given array of integers.
+Put all even numbers first, and then odd numbers.and print sum of array
+Output:
+Original Array
+[20, 12, 23, 17, 7, 8, 10, 2, 1, 0]
+Array after separation
+[20, 12, 0, 2, 10, 8, 7, 17, 1, 23]
+Sum of array is 100
