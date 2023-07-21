@@ -20,20 +20,20 @@ public class SeparateEvenOdd {
     }
 
     public static int[] filterEvenOdd(int numberArray[]) {
-        int left_side = 0, right_side = numberArray.length - 1;
-        while (left_side < right_side) {
-            while (numberArray[left_side] % 2 == 0 && left_side < right_side)
-                left_side++;
+        int leftSide = 0, rightSide = numberArray.length - 1;
+        while (leftSide < rightSide) {
+            while (numberArray[leftSide] % 2 == 0 && leftSide < rightSide)
+                leftSide++;
 
-            while (numberArray[right_side] % 2 == 1 && left_side < right_side)
-                right_side--;
+            while (numberArray[rightSide] % 2 == 1 && leftSide < rightSide)
+                rightSide--;
 
-            if (left_side < right_side) {
-                int temp = numberArray[left_side];
-                numberArray[left_side] = numberArray[right_side];
-                numberArray[right_side] = temp;
-                left_side++;
-                right_side--;
+            if (leftSide < rightSide) {
+                int temp = numberArray[leftSide];
+                numberArray[leftSide] = numberArray[rightSide];
+                numberArray[rightSide] = temp;
+                leftSide++;
+                rightSide--;
             }
         }
         return numberArray;
